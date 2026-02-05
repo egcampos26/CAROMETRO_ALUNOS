@@ -9,10 +9,9 @@ interface OccurrencesListProps {
   students: Student[];
   occurrences: Occurrence[];
   user: AuthUser;
-  onToggleRole: () => void;
 }
 
-const OccurrencesList: React.FC<OccurrencesListProps> = ({ students, occurrences, user, onToggleRole }) => {
+const OccurrencesList: React.FC<OccurrencesListProps> = ({ students, occurrences, user }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterDate, setFilterDate] = useState('');
   const navigate = useNavigate();
@@ -61,7 +60,6 @@ const OccurrencesList: React.FC<OccurrencesListProps> = ({ students, occurrences
     <Layout
       title={headerTitle}
       user={user}
-      onToggleRole={onToggleRole}
       rightAction={
         <button
           onClick={handleAddNew}

@@ -8,10 +8,9 @@ import { Search, UserCircle2 } from 'lucide-react';
 interface CarometroGalleryProps {
   students: Student[];
   user: AuthUser;
-  onToggleRole: () => void;
 }
 
-const CarometroGallery: React.FC<CarometroGalleryProps> = ({ students, user, onToggleRole }) => {
+const CarometroGallery: React.FC<CarometroGalleryProps> = ({ students, user }) => {
   const { shift, grade } = useParams<{ shift: string; grade: string }>();
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -37,7 +36,6 @@ const CarometroGallery: React.FC<CarometroGalleryProps> = ({ students, user, onT
     <Layout
       title={displayTitle}
       user={user}
-      onToggleRole={onToggleRole}
     >
       <div className="p-4 sm:p-8 max-w-7xl mx-auto w-full">
         {/* Search Bar */}

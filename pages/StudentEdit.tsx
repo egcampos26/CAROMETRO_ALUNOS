@@ -9,10 +9,9 @@ interface StudentEditProps {
   students: Student[];
   onUpdate: (student: Student) => void;
   user: AuthUser;
-  onToggleRole: () => void;
 }
 
-const StudentEdit: React.FC<StudentEditProps> = ({ students, onUpdate, user, onToggleRole }) => {
+const StudentEdit: React.FC<StudentEditProps> = ({ students, onUpdate, user }) => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const student = students.find(s => s.id === id);
@@ -37,7 +36,6 @@ const StudentEdit: React.FC<StudentEditProps> = ({ students, onUpdate, user, onT
       <Layout
         title="ACESSO NEGADO"
         user={user}
-        onToggleRole={onToggleRole}
       >
         <div className="flex flex-col items-center justify-center h-[70vh] p-8 text-center space-y-4">
           <div className="w-20 h-20 bg-red-50 text-red-500 rounded-full flex items-center justify-center mb-4">
@@ -90,7 +88,6 @@ const StudentEdit: React.FC<StudentEditProps> = ({ students, onUpdate, user, onT
     <Layout
       title={headerTitle}
       user={user}
-      onToggleRole={onToggleRole}
       showHome={false}
       showBack={false}
       rightAction={null}

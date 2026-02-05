@@ -2,7 +2,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Home, ChevronLeft } from 'lucide-react';
-import { AuthUser } from '../types';
 
 interface LayoutProps {
   title: React.ReactNode;
@@ -11,7 +10,6 @@ interface LayoutProps {
   showBack?: boolean;
   leftAction?: React.ReactNode;
   rightAction?: React.ReactNode;
-  user?: AuthUser;
 }
 
 const Layout: React.FC<LayoutProps> = ({

@@ -75,7 +75,7 @@ const OccurrenceAdd: React.FC<OccurrenceAddProps> = ({ students, onAdd, user }) 
   );
 
   return (
-    <Layout title={headerTitle}>
+    <Layout title={headerTitle} user={user} onToggleRole={() => { }}>
       <div className="p-6 max-w-4xl mx-auto pb-20">
         {/* Aluno Principal */}
         <div className="mb-6 flex items-center gap-4 p-4 bg-blue-50/30 rounded-2xl border border-blue-100/50">

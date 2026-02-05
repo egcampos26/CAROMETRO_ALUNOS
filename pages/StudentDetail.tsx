@@ -9,10 +9,9 @@ interface StudentDetailProps {
   students: Student[];
   occurrences: Occurrence[];
   user: AuthUser;
-  onToggleRole: () => void;
 }
 
-const StudentDetail: React.FC<StudentDetailProps> = ({ students, occurrences, user, onToggleRole }) => {
+const StudentDetail: React.FC<StudentDetailProps> = ({ students, occurrences, user }) => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const student = students.find(s => s.id === id);
@@ -41,7 +40,6 @@ const StudentDetail: React.FC<StudentDetailProps> = ({ students, occurrences, us
     <Layout
       title={headerTitle}
       user={user}
-      onToggleRole={onToggleRole}
       leftAction={null}
       rightAction={
         isAdmin ? (

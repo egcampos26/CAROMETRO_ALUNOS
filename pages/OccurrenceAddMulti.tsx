@@ -71,7 +71,7 @@ const OccurrenceAddMulti: React.FC<OccurrenceAddMultiProps> = ({ students, onAdd
   );
 
   return (
-    <Layout title={headerTitle}>
+    <Layout title={headerTitle} user={user} onToggleRole={() => { }}>
       <div className="p-6 max-w-4xl mx-auto pb-20">
 
         {/* Seleção de Alunos */}

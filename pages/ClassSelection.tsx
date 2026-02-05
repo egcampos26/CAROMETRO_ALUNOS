@@ -7,10 +7,9 @@ import { AuthUser } from '../types';
 
 interface ClassSelectionProps {
   user: AuthUser;
-  onToggleRole: () => void;
 }
 
-const ClassSelection: React.FC<ClassSelectionProps> = ({ user, onToggleRole }) => {
+const ClassSelection: React.FC<ClassSelectionProps> = ({ user }) => {
   const { shift } = useParams<{ shift: string }>();
   const navigate = useNavigate();
 
@@ -28,7 +27,6 @@ const ClassSelection: React.FC<ClassSelectionProps> = ({ user, onToggleRole }) =
     <Layout
       title={headerTitle}
       user={user}
-      onToggleRole={onToggleRole}
     >
       <div className="p-4 sm:p-8 md:p-12 max-w-6xl mx-auto w-full">
         {gradesForShift.length > 0 ? (

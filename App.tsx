@@ -60,11 +60,11 @@ const App: React.FC = () => {
         <div className="flex-1 flex flex-col w-full max-w-7xl mx-auto bg-white shadow-sm md:my-4 md:rounded-xl overflow-hidden relative">
           <Routes>
             <Route path="/" element={<ShiftSelection user={user} />} />
-            <Route path="/classes/:shift" element={<ClassSelection user={user} onToggleRole={() => { }} />} />
-            <Route path="/carometro/:shift/:grade" element={<CarometroGallery students={students} user={user} onToggleRole={() => { }} />} />
-            <Route path="/student/:id" element={<StudentDetail students={students} occurrences={occurrences} user={user} onToggleRole={() => { }} />} />
-            <Route path="/edit-student/:id" element={<StudentEdit students={students} onUpdate={updateStudent} user={user} onToggleRole={() => { }} />} />
-            <Route path="/occurrences" element={<OccurrencesList students={students} occurrences={occurrences} user={user} onToggleRole={() => { }} />} />
+            <Route path="/classes/:shift" element={<ClassSelection user={user} />} />
+            <Route path="/carometro/:shift/:grade" element={<CarometroGallery students={students} user={user} />} />
+            <Route path="/student/:id" element={<StudentDetail students={students} occurrences={occurrences} user={user} />} />
+            <Route path="/edit-student/:id" element={<StudentEdit students={students} onUpdate={updateStudent} user={user} />} />
+            <Route path="/occurrences" element={<OccurrencesList students={students} occurrences={occurrences} user={user} />} />
             <Route path="/occurrence/:id" element={<OccurrenceDetail students={students} occurrences={occurrences} user={user} onDelete={deleteOccurrence} />} />
             <Route path="/add-occurrence/:studentId" element={<OccurrenceAdd students={students} onAdd={addOccurrence} user={user} />} />
             <Route path="/add-multi-occurrence" element={<OccurrenceAddMulti students={students} onAdd={addOccurrence} user={user} />} />
