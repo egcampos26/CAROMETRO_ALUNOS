@@ -54,8 +54,8 @@ const StudentDetail: React.FC<StudentDetailProps> = ({ students, occurrences, us
       }
     >
       <div className="max-w-6xl mx-auto p-4 sm:p-8 lg:p-12">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-          <div className="flex flex-col items-center lg:w-1/3 space-y-8">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 2xl:gap-20">
+          <div className="flex flex-col items-center lg:w-1/3 xl:w-1/4 space-y-8">
             <div className="w-full max-w-[320px] lg:max-w-none">
               <div className="aspect-[3/4] bg-gray-50 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                 <img src={student.photoUrl} alt={student.name} className="w-full h-full object-cover" />

@@ -92,8 +92,8 @@ const StudentEdit: React.FC<StudentEditProps> = ({ students, onUpdate, user }) =
       showBack={false}
       rightAction={null}
     >
-      <div className="max-w-4xl mx-auto p-4 sm:p-8 lg:p-12 pb-24">
-        <form onSubmit={handleSave} className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+      <div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8 lg:p-12 pb-24">
+        <form onSubmit={handleSave} className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
 
           <div className="flex flex-col items-center lg:w-1/3">
             <div

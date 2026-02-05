@@ -37,9 +37,9 @@ const CarometroGallery: React.FC<CarometroGalleryProps> = ({ students, user }) =
       title={displayTitle}
       user={user}
     >
-      <div className="p-4 sm:p-8 max-w-7xl mx-auto w-full">
+      <div className="p-4 sm:p-6 md:p-8 max-w-7xl mx-auto w-full">
         {/* Search Bar */}
-        <div className="relative mb-10 max-w-xl mx-auto">
+        <div className="relative mb-8 md:mb-10 max-w-lg xl:max-w-2xl mx-auto">
           <input
             type="text"
             placeholder="Buscar aluno por nome..."
@@ -51,7 +51,7 @@ const CarometroGallery: React.FC<CarometroGalleryProps> = ({ students, user }) =
         </div>
 
         {filteredStudents.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-14">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-x-3 sm:gap-x-4 md:gap-x-6 gap-y-8 sm:gap-y-10 md:gap-y-14">
             {filteredStudents.map((student) => (
               <div
                 key={student.id}

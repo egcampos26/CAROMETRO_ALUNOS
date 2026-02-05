@@ -22,7 +22,7 @@ const ShiftSelection: React.FC<ShiftSelectionProps> = ({ user }) => {
 
   const headerTitle = (
     <div className="flex flex-col items-center justify-center leading-tight px-2">
-      <span className="text-lg sm:text-2xl md:text-3xl font-black tracking-tighter uppercase whitespace-nowrap">CARÔMETRO DOS ALUNOS</span>
+      <span className="text-lg sm:text-2xl md:text-3xl xl:text-4xl font-black tracking-tighter uppercase whitespace-nowrap">CARÔMETRO DOS ALUNOS</span>
     </div>
   );
 
@@ -37,7 +37,7 @@ const ShiftSelection: React.FC<ShiftSelectionProps> = ({ user }) => {
 
         {/* Container de instrução com padding controlado para manter proporção */}
         <div className="flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20">
-          <h2 className="text-[#3b5998] font-black uppercase tracking-widest text-lg sm:text-xl md:text-2xl text-center">
+          <h2 className="text-[#3b5998] font-black uppercase tracking-widest text-lg sm:text-xl md:text-2xl xl:text-3xl text-center">
             SELECIONE UM PERÍODO
           </h2>
         </div>

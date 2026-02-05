@@ -102,7 +102,7 @@ const OccurrenceAdd: React.FC<OccurrenceAddProps> = ({ students, onAdd, user }) 
             <input
               type="text"
               placeholder="Buscar aluno por nome ou RA..."
-              className="w-full pl-12 pr-4 py-4 bg-white border-2 border-gray-100 rounded-2xl focus:border-[#3b5998] outline-none font-bold text-gray-700 transition-all text-sm"
+              className="w-full pl-12 pr-4 py-5 bg-white border-2 border-gray-100 rounded-2xl focus:border-[#3b5998] outline-none font-bold text-gray-700 transition-all text-sm"
               value={studentSearch}
               onChange={(e) => setStudentSearch(e.target.value)}
             />

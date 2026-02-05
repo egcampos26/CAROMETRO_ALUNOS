@@ -106,7 +106,7 @@ const OccurrencesList: React.FC<OccurrencesListProps> = ({ students, occurrences
         </div>
 
         {/* Dynamic Grid for Results */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 md:gap-6">
           {!(hasSearch || hasDateFilter) ? (
             <div className="col-span-full text-center py-24 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-100 px-6">
               <div className="bg-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">

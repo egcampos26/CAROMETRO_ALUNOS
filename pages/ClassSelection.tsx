@@ -30,7 +30,7 @@ const ClassSelection: React.FC<ClassSelectionProps> = ({ user }) => {
     >
       <div className="p-4 sm:p-8 md:p-12 max-w-6xl mx-auto w-full">
         {gradesForShift.length > 0 ? (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4 sm:gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-3 sm:gap-4 md:gap-6">
             {gradesForShift.map((grade) => (
               <button
                 key={grade}
