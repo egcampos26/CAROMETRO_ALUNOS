@@ -26,7 +26,7 @@ const StudentDetail: React.FC<StudentDetailProps> = ({ students, occurrences, us
   const handleEdit = (e: React.MouseEvent) => {
     e.preventDefault();
     if (isAdmin) {
-      navigate(`/edit-student/${student.id}`);
+      navigate(`/edit-student/${student.id}`, { replace: true });
     }
   };
 
